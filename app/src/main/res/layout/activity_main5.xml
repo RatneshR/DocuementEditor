@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context="com.example.android.openoffice1.Main5Activity">
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginBottom="20dp"
+        android:text="Update A File"
+        android:padding="7dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fdfafa"
+        android:background="#44c5ff" />
+
+    <EditText
+        android:id="@+id/text_file_data"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_below="@+id/editText2"
+        android:layout_above="@+id/Savebutton"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/open_text_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getTextFile"
+        android:text = "OPEN FILE"
+        android:layout_alignTop="@+id/editText2"
+        android:layout_alignEnd="@+id/Savebutton" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="File Name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/text_file_data"
+        android:layout_toStartOf="@+id/open_text_file" />
+
+    <Button
+        android:id="@+id/Savebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp" />
+
+
+</RelativeLayout>
